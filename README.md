@@ -110,10 +110,6 @@ The project will:
 Contributions are welcome! ✨  
 Feel free to open issues or submit pull requests to enhance the project.
 
----
-
-## 📜 License
-This project is for educational and learning purposes only.
 
 ---
 
