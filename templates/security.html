@@ -1,0 +1,62 @@
+<!-- templates/security.html -->
+{% extends "base.html" %}
+
+{% block title %}MyBank - Security{% endblock %}
+
+{% block content %}
+<div class="header">
+    <h2><i class="fas fa-shield-alt"></i> Security Center</h2>
+    <p>Manage your account security settings</p>
+</div>
+
+<!-- Security Status -->
+<div class="card">
+    <h3><i class="fas fa-check-circle" style="color: var(--success-color);"></i> Security Status</h3>
+    <p>Your account is currently secure. Here's what we recommend:</p>
+    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+        <li>Enable Two-Factor Authentication</li>
+        <li>Update your password regularly</li>
+        <li>Review recent login activity</li>
+    </ul>
+</div>
+
+<!-- Two-Factor Authentication -->
+<div class="card" style="margin-top: 2rem;">
+    <h3><i class="fas fa-lock"></i> Two-Factor Authentication</h3>
+    <p>Add an extra layer of security to your account.</p>
+    <div style="text-align: center; margin-top: 1rem;">
+        <button class="btn btn-primary">
+            <i class="fas fa-toggle-on"></i> Enable 2FA
+        </button>
+    </div>
+</div>
+
+<!-- Recent Activity -->
+<div class="card" style="margin-top: 2rem;">
+    <h3><i class="fas fa-history"></i> Recent Activity</h3>
+    <ul class="transaction-list">
+        <li class="transaction-item">
+            <div>
+                <div style="font-weight: bold;">Login from Chrome</div>
+                <small>2023-07-20 14:30 • New York, NY</small>
+            </div>
+            <div>
+                <button class="btn btn-primary">
+                    <i class="fas fa-info-circle"></i> Details
+                </button>
+            </div>
+        </li>
+        <li class="transaction-item">
+            <div>
+                <div style="font-weight: bold;">Password Changed</div>
+                <small>2023-07-15 09:15 • Verified</small>
+            </div>
+            <div>
+                <button class="btn btn-primary">
+                    <i class="fas fa-info-circle"></i> Details
+                </button>
+            </div>
+        </li>
+    </ul>
+</div>
+{% endblock %}

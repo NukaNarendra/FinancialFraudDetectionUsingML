@@ -1,0 +1,19 @@
+<!-- templates/error.html -->
+{% extends "base.html" %}
+
+{% block title %}MyBank - Error{% endblock %}
+
+{% block content %}
+<div style="text-align: center;">
+    <div style="font-size: 4rem; color: var(--danger-color);">
+        <i class="fas fa-exclamation-circle"></i>
+    </div>
+    <h2 style="color: var(--danger-color);">Error</h2>
+    <div style="background: rgba(198, 40, 40, 0.1); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+        <p>{{ error }}</p>
+    </div>
+    <a href="/" class="btn btn-primary">
+        <i class="fas fa-home"></i> Return to Home
+    </a>
+</div>
+{% endblock %}
