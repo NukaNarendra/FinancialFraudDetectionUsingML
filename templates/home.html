@@ -1,0 +1,172 @@
+<!-- templates/home.html -->
+{% extends "base.html" %}
+
+{% block title %}MyBank - Online Banking{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="header">
+    <h1 style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1rem;">
+        <i class="fas fa-landmark"></i> Welcome to MyBank
+    </h1>
+    <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem;">
+        Your Secure Banking Partner. Experience the future of banking with our secure, intuitive, and feature-rich platform.
+    </p>
+    <div style="margin-top: 2rem;">
+        <a href="/login"><button onclick="openLoginModal()" class="btn btn-primary" style="margin-right: 1rem;">
+            <i class="fas fa-sign-in-alt"></i> Login
+        </button>
+        </a>
+        <a href="/register" class="btn btn-secondary">
+            <i class="fas fa-user-plus"></i> Open an Account
+        </a>
+    </div>
+</div>
+
+<!-- Features Section -->
+<h3 class="section-title"><i class="fas fa-star"></i> Our Services</h3>
+<div class="grid" style="margin-bottom: 3rem;">
+    <div class="feature-card">
+        <div class="feature-icon">
+            <i class="fas fa-mobile-alt"></i>
+        </div>
+        <div class="feature-content">
+            <h3>Mobile Banking</h3>
+            <p>Access your accounts, make transfers, and pay bills from anywhere, anytime with our award-winning mobile app.</p>
+        </div>
+    </div>
+
+    <div class="feature-card">
+        <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="feature-content">
+            <h3>Fraud Protection</h3>
+            <p>Our advanced AI-powered fraud detection system keeps your money safe with real-time transaction monitoring.</p>
+        </div>
+    </div>
+
+    <div class="feature-card">
+        <div class="feature-icon">
+            <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="feature-content">
+            <h3>Investment Services</h3>
+            <p>Grow your wealth with our range of investment options tailored to your financial goals and risk appetite.</p>
+        </div>
+    </div>
+
+    <div class="feature-card">
+        <div class="feature-icon">
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="feature-content">
+            <h3>Mortgage Solutions</h3>
+            <p>Find the perfect home loan with competitive rates and flexible terms designed to fit your needs.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Security Notice -->
+<div style="background-color: rgba(255, 255, 255, 0.9); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; text-align: center; border-left: 5px solid var(--primary-color);">
+    <h3 style="color: var(--primary-color);">
+        <i class="fas fa-lock"></i> Bank-Grade Security
+    </h3>
+    <p>Your security is our top priority. We employ industry-leading encryption and multi-factor authentication to keep your data and money safe.</p>
+    <a href="/security" class="btn btn-primary" style="margin-top: 1rem;">
+        Learn More About Our Security
+    </a>
+</div>
+
+<!-- Testimonials -->
+<h3 class="section-title"><i class="fas fa-quote-left"></i> What Our Customers Say</h3>
+<div class="grid" style="margin-bottom: 3rem;">
+    <div class="card">
+        <div style="position: relative;">
+            <div style="position: absolute; top: -15px; left: 20px; font-size: 2rem; color: var(--accent-color);">
+                <i class="fas fa-quote-left"></i>
+            </div>
+            <p style="margin-top: 1rem;">MyBank has transformed how I manage my finances. The mobile app is intuitive and the customer service is exceptional.</p>
+            <div style="display: flex; align-items: center; margin-top: 1rem;">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background-color: #ddd; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem;">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div>
+                    <p style="font-weight: bold; margin: 0;">Sarah Johnson</p>
+                    <p style="font-size: 0.9rem; margin: 0; color: #666;">Customer since 2021</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div style="position: relative;">
+            <div style="position: absolute; top: -15px; left: 20px; font-size: 2rem; color: var(--accent-color);">
+                <i class="fas fa-quote-left"></i>
+            </div>
+            <p style="margin-top: 1rem;">The fraud detection system saved me from a suspicious transaction. The team was quick to respond and resolve the issue.</p>
+            <div style="display: flex; align-items: center; margin-top: 1rem;">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background-color: #ddd; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem;">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div>
+                    <p style="font-weight: bold; margin: 0;">Michael Chen</p>
+                    <p style="font-size: 0.9rem; margin: 0; color: #666;">Customer since 2019</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mobile App Section -->
+<div style="display: flex; align-items: center; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); padding: 2rem; border-radius: 12px; color: white; margin-bottom: 3rem;">
+    <div style="flex: 1;">
+        <h3>Download Our Mobile App</h3>
+        <p style="margin: 1rem 0;">Experience the convenience of banking on the go with our feature-rich mobile app.</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="#" class="btn" style="background: black; display: flex; align-items: center;">
+                <i class="fab fa-apple" style="font-size: 1.5rem; margin-right: 0.5rem;"></i>
+                <div style="text-align: left;">
+                    <small style="display: block; font-size: 0.7rem;">Download on the</small>
+                    App Store
+                </div>
+            </a>
+            <a href="#" class="btn" style="background: black; display: flex; align-items: center;">
+                <i class="fab fa-google-play" style="font-size: 1.5rem; margin-right: 0.5rem;"></i>
+                <div style="text-align: left;">
+                    <small style="display: block; font-size: 0.7rem;">Get it on</small>
+                    Google Play
+                </div>
+            </a>
+        </div>
+    </div>
+    <div style="flex: 1; text-align: center; display: none; max-width: 300px; margin-left: auto;">
+        <img src="/api/placeholder/300/600" alt="Mobile App" style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.3);">
+    </div>
+</div>
+
+<!-- CTA Section -->
+<div style="text-align: center; margin: 4rem 0;">
+    <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Ready to Get Started?</h2>
+    <p style="max-width: 600px; margin: 0 auto 2rem;">Join thousands of satisfied customers who have chosen MyBank for their financial needs.</p>
+    <a href="/register" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.2rem;">
+        <i class="fas fa-user-plus"></i> Open an Account Today
+    </a>
+</div>
+
+<!-- Branch Locator -->
+<h3 class="section-title"><i class="fas fa-map-marker-alt"></i> Find a Branch</h3>
+<div class="card">
+    <p>Visit one of our branches for personalized service. Our experienced staff is ready to help you with all your banking needs.</p>
+    <div style="margin: 1.5rem 0;">
+        <div class="form-group">
+            <label for="location"><i class="fas fa-search-location"></i> Enter your location</label>
+            <input type="text" id="location" placeholder="City, State or ZIP Code">
+        </div>
+        <button class="btn btn-primary">
+            <i class="fas fa-search"></i> Find Nearest Branches
+        </button>
+    </div>
+    <p>Or call our 24/7 customer service at <strong>(800) 123-4567</strong></p>
+</div>
+{% endblock %}
