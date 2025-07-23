@@ -88,7 +88,7 @@ Contributions are highly welcome! Feel free to raise issues, suggest improvement
 ---
 
 ## 👤 Author
-**Nuka Narendra**
+**Venkata Narendra Nuka**
 
 ---
 
